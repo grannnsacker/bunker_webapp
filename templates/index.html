@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script type="text/javascript" src="script.js" defer></script>
+<link rel="stylesheet" href="style.css">
+<title>Card Actions</title>
+
+</head>
+<body>
+  <div class="main-container">
+    <div class="main-theme">
+      <div class="sub-theme">
+        <span class="emoji">📋</span>
+        <span class="sub-theme-text">Карточки действий</span>
+      </div>
+      <div class="sub-theme-container">
+        <div class="sub-theme">
+          <span class="emoji">🔄</span>
+          <span class="sub-theme-text">Карточки обмена</span>
+        </div>
+        <div class="action-container">
+          <div class="action">
+            <span class="emoji">😀</span>
+            <span class="action-text">Доп. информация</span>
+          </div>
+          <label class="toggle-switch">
+            <input onchange="switch_card(this.name)" type="checkbox" name="exchange_add">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+        <div class="action-container">
+          <div class="action">
+            <span class="emoji">💉</span>
+            <span class="action-text">Здоровье</span>
+          </div>
+          <label class="toggle-switch">
+            <input type="checkbox" name="exchange_health">
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="main-theme">
+      <div class="sub-theme">
+        <span class="emoji">📋</span>
+        <span class="sub-theme-text">Уровни</span>
+      </div>
+      <div class="sub-theme-container">
+        <div class="sub-theme">
+          <span class="emoji">🔄</span>
+          <span class="sub-theme-text">Настройки игры</span>
+        </div>
+        <div class="action-container">
+          <div class="action">
+            <span class="emoji">😀</span>
+            <span class="action-text">Макc. количество игроков (до 15)</span>
+
+          </div>
+          <input class="input-field" type="number" value="7" min="4" max="10" name="max_person_in_game">
+        </div>
+      </div>
+
+    </div>
+    <div class="main-theme">
+      <div class="sub-theme">
+        <span class="emoji">📋</span>
+        <span class="sub-theme-text">Настройка игровых этапов</span>
+      </div>
+      <div class="sub-theme-container">
+        <div class="sub-theme">
+          <span class="emoji">🔄</span>
+          <span class="sub-theme-text">Длительность (от 30 до 120 сек.)</span>
+        </div>
+        <div class="action-container">
+          <div class="action">
+            <span class="emoji">😀</span>
+            <span class="action-text">Обсуждение</span>
+          </div>
+          <input class="input-field" type="number" value="45" min="30" max="120" name="duration_of_the_discussion">
+        </div>
+
+        <div class="action-container">
+          <div class="action">
+            <span class="emoji">😀</span>
+            <span class="action-text">Голосование</span>
+          </div>
+          <input class="input-field" type="number" value="45" min="30" max="120" name="Duration_voting">
+        </div>
+
+        <div class="action-container">
+          <div class="action">
+            <span class="emoji">😀</span>
+            <span class="action-text">Вскрытие характеристик</span>
+          </div>
+          <input class="input-field" type="number" value="45" min="30" max="120" name="duration_opening_characteristics">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
